@@ -10,7 +10,7 @@ const Todos = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllTodos());
-  }, );
+  }, [dispatch]);
 
   return (
     <div>
